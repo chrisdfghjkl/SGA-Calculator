@@ -9,7 +9,7 @@ describe('PlanetAge', () => {
 
   test('should return user age on mercury', () => {
     const mercTest = new PlanetAge(30); 
-    expect(mercTest.mercury()).toEqual(125);
+    expect(mercTest.mercury()).toEqual(125.00);
   });
 
 
