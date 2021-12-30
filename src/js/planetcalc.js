@@ -3,4 +3,9 @@ export default class PlanetAge {
     this.age = age;
   }
 
+  mercury() {
+    this.mercuryAge = this.age / .24;
+    return this.mercuryAge;
+  }
+
 }
