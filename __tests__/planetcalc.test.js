@@ -11,6 +11,13 @@ describe('PlanetAge', () => {
     expect(newAge.age).toEqual(30);
   }); 
 
+  test('should return user ages on different planets', () => {
+    expect(newAge.mercuryAge).toEqual(125);
+    expect(newAge.venusAge).toEqual(48.39);
+    expect(newAge.marsAge).toEqual(15.96);
+    expect(newAge.jupiterAge).toEqual(2.53);
+  });
+
 
 
 
