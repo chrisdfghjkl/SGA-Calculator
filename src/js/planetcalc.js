@@ -13,4 +13,9 @@ export default class PlanetAge {
     return this.venusAge;
   }
 
+  mars() {
+    this.marsAge = this.age / 1.88;
+    return this.marsAge;
+  }
+
 }
