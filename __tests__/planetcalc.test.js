@@ -17,6 +17,11 @@ describe('PlanetAge', () => {
     expect(venusTest.venus()).toEqual(51.612903225806452)
   });
 
+  test('should return user age on mars', () => {
+    const marsTest = new PlanetAge(32);
+    expect(marsTest.mars()).toEqual(17.021276595744681)
+  });
+
 
 
 
