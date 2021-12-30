@@ -8,4 +8,9 @@ export default class PlanetAge {
     return this.mercuryAge;
   }
 
+  venus() {
+    this.venusAge = this.age / .62;
+    return this.venusAge;
+  }
+
 }
