@@ -4,22 +4,22 @@ export default class PlanetAge {
   }
 
   mercury() {
-    this.mercuryAge = this.age / .24;
+    this.mercuryAge = parseFloat((this.age / .24).toFixed(2));
     return this.mercuryAge;
   }
 
   venus() {
-    this.venusAge = this.age / .62;
+    this.venusAge = parseFloat((this.age / .62).toFixed(2));
     return this.venusAge;
   }
 
   mars() {
-    this.marsAge = this.age / 1.88;
+    this.marsAge = parseFloat((this.age / 1.88).toFixed(2));
     return this.marsAge;
   }
 
   jupiter() {
-    this.jupiterAge = this.age / 11.86;
+    this.jupiterAge = parseFloat((this.age / 11.86).toFixed(2));
     return this.jupiterAge;
   }
 
