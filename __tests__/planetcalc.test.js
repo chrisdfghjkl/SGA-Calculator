@@ -72,4 +72,20 @@ describe('PlanetAge', () => {
     leftToLiveMars.marsSpan();
     expect(leftToLiveMars.marsLifeSpan).toEqual(3.93);
   });
+
+  test('should return years left to live on Jupiter', () => {
+    const leftToLiveJupiter = new PlanetAge(30);
+    leftToLiveJupiter.ageConverter();
+    leftToLiveJupiter.planetExpectancy();
+    leftToLiveJupiter.jupiterSpan();
+    expect(leftToLiveJupiter.jupiterLifeSpan).toEqual(3.59);
+  });
+
+  test('should return years past life expectancy lived on Jupiter', () => {
+    const leftToLiveJupiter = new PlanetAge(80);
+    leftToLiveJupiter.ageConverter();
+    leftToLiveJupiter.planetExpectancy();
+    leftToLiveJupiter.jupiterSpan();
+    expect(leftToLiveJupiter.jupiterLifeSpan).toEqual(0.63);
+  });
 });
