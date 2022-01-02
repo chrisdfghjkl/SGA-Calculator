@@ -45,7 +45,7 @@ describe('PlanetAge', () => {
     const leftToLiveVenus = new PlanetAge(30);
     leftToLiveVenus.ageConverter();
     leftToLiveVenus.planetExpectancy();
-    leftToLiveVenus.mercurySpan();
+    leftToLiveVenus.venusSpan();
     expect(leftToLive.venusLifeSpan).toEqual(68.71);
   });
 
@@ -53,7 +53,7 @@ describe('PlanetAge', () => {
     const leftToLiveVenus = new PlanetAge(80);
     leftToLiveVenus.ageConverter();
     leftToLiveVenus.planetExpectancy();
-    leftToLiveVenus.mercurySpan();
+    leftToLiveVenus.venusSpan();
     expect(leftToLive.venusLifeSpan).toEqual(11.93);
   });
 });
