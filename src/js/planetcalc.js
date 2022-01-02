@@ -20,5 +20,8 @@ export default class PlanetAge {
 
   mercurySpan() {;
     this.mercuryLifeSpan = Number(parseFloat((this.mercuryExpectancy - this.mercuryAge).toFixed(2)));
+    if (this.mercuryLifeSpan < 0) {
+      this.mercuryLifeSpan = Math.abs(this.mercuryLifeSpan);
+    }
   }
 }
