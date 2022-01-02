@@ -46,7 +46,7 @@ describe('PlanetAge', () => {
     leftToLiveVenus.ageConverter();
     leftToLiveVenus.planetExpectancy();
     leftToLiveVenus.venusSpan();
-    expect(leftToLive.venusLifeSpan).toEqual(68.71);
+    expect(leftToLiveVenus.venusLifeSpan).toEqual(68.71);
   });
 
   test('should return years past life expectancy lived on Venus', () => {
@@ -54,6 +54,6 @@ describe('PlanetAge', () => {
     leftToLiveVenus.ageConverter();
     leftToLiveVenus.planetExpectancy();
     leftToLiveVenus.venusSpan();
-    expect(leftToLive.venusLifeSpan).toEqual(11.93);
+    expect(leftToLiveVenus.venusLifeSpan).toEqual(11.93);
   });
 });
