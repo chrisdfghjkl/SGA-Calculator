@@ -17,7 +17,7 @@ describe('PlanetAge', () => {
   });
 
   test('should calculate life expectancy on each planet', () =>{
-    const lifespan = new planetsAge(30);
+    const lifespan = new PlanetsAge(30);
     lifespan.planetExpectancy();
     expect(lifespan.mercuryExpectancy).toEqual(302.50);
     expect(lifespan.venusExpectancy).toEqual(117.10);
