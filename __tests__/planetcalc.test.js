@@ -24,4 +24,10 @@ describe('PlanetAge', () => {
     expect(lifespan.marsExpectancy).toEqual(38.62);
     expect(lifespan.jupiterExpectancy).toEqual(6.12);
   });
+
+  test('should calculate years left to live on Mercury', () => {
+    const leftToLive = new PlanetAge(30);
+    leftToLive.mercurySpan();
+    expect(leftToLive.mercuryLifeSpan).toEqual(177.50);
+  });
 });
