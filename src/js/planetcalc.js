@@ -17,4 +17,8 @@ export default class PlanetAge {
     this.marsExpectancy = parseFloat((this.lifeExpectancy / 1.88).toFixed(2));
     this.jupiterExpectancy = parseFloat((this.lifeExpectancy / 11.86).toFixed(2));
   }
+
+  mercurySpan() {;
+    this.mercuryLifeSpan = Number(parseFloat((this.mercuryExpectancy - this.mercuryAge).toFixed(2)));
+  }
 }
