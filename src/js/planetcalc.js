@@ -38,4 +38,11 @@ export default class PlanetAge {
       this.marsLifeSpan = Math.abs(this.marsLifeSpan);
     }
   }
+
+  jupiterSpan() {;
+    this.jupiterLifeSpan = Number(parseFloat((this.jupiterExpectancy - this.jupiterAge).toFixed(2)));
+    if (this.jupiterLifeSpan < 0) {
+      this.jupiterLifeSpan = Math.abs(this.jupiterLifeSpan);
+    }
+  }
 }
