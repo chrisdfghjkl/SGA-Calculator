@@ -10,4 +10,11 @@ export default class PlanetAge {
     this.marsAge = parseFloat((this.age / 1.88).toFixed(2));
     this.jupiterAge = parseFloat((this.age / 11.86).toFixed(2));
   }
+
+  planetExpectancy() {
+    this.mercuryExpectancy = parseFloat((this.lifeExpectancy / .24).toFixed(2));
+    this.venusExpectancy = parseFloat((this.lifeExpectancy / .62).toFixed(2));
+    this.marsExpectancy = parseFloat((this.lifeExpectancy / 1.88).toFixed(2));
+    this.jupiterExpectancy = parseFloat((this.lifeExpectancy / 11.86).toFixed(2));
+  }
 }
