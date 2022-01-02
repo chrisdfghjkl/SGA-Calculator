@@ -24,4 +24,11 @@ export default class PlanetAge {
       this.mercuryLifeSpan = Math.abs(this.mercuryLifeSpan);
     }
   }
+
+  venusSpan() {;
+    this.venusLifeSpan = Number(parseFloat((this.venusExpectancy - this.venusAge).toFixed(2)));
+    if (this.venusLifeSpan < 0) {
+      this.venusLifeSpan = Math.abs(this.venusLifeSpan);
+    }
+  }
 }
