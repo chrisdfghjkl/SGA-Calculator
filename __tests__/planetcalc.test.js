@@ -27,6 +27,8 @@ describe('PlanetAge', () => {
 
   test('should calculate years left to live on Mercury', () => {
     const leftToLive = new PlanetAge(30);
+    leftToLive.ageConverter();
+    leftToLive.planetExpectancy();
     leftToLive.mercurySpan();
     expect(leftToLive.mercuryLifeSpan).toEqual(177.50);
   });
