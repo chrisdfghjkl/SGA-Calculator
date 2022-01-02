@@ -32,4 +32,12 @@ describe('PlanetAge', () => {
     leftToLive.mercurySpan();
     expect(leftToLive.mercuryLifeSpan).toEqual(177.50);
   });
+
+  test('should return years past life expectancy lived on Mercury', () => {
+    const leftToLive = new PlanetAge(80);
+    leftToLive.ageConverter();
+    leftToLive.planetExpectancy();
+    leftToLive.mercurySpan();
+    expect(leftToLive.mercuryLifeSpan).toEqual(30.83);
+  });
 });
