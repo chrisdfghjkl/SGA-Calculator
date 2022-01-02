@@ -40,4 +40,20 @@ describe('PlanetAge', () => {
     leftToLive.mercurySpan();
     expect(leftToLive.mercuryLifeSpan).toEqual(30.83);
   });
+
+  test('should return years left to live on Venus', () => {
+    const leftToLiveVenus = new PlanetAge(30);
+    leftToLiveVenus.ageConverter();
+    leftToLiveVenus.planetExpectancy();
+    leftToLiveVenus.mercurySpan();
+    expect(leftToLive.venusLifeSpan).toEqual(68.71);
+  });
+
+  test('should return years past life expectancy lived on Venus', () => {
+    const leftToLiveVenus = new PlanetAge(80);
+    leftToLiveVenus.ageConverter();
+    leftToLiveVenus.planetExpectancy();
+    leftToLiveVenus.mercurySpan();
+    expect(leftToLive.venusLifeSpan).toEqual(11.93);
+  });
 });
