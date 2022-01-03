@@ -18,12 +18,13 @@ This application does not include user interface.
 * Node Package Manager
 * Webpack
 * Jest
-
-
+#
+#
 #### Setup/Installation Requirements
 * Clone the repository to your desktop
 * Navigate to the top level of the directory
-* Open index.html in your browser
+* From this directory, run `npm install` to install necessary packages and dependencies, then run `npm run build`
+* No user interface, but you can run `code .` to view project files with VS Code and `npm test` to verify that business logic passes
 
 #### Known Bugs
 * None at this time
