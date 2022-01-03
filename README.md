@@ -1,7 +1,7 @@
 # Super Galactic Age Calculator 
 ##### By Chris DePastene
-#
-#
+
+
 #### Description
 Epicodus independent project for Test Driven Development unit. The application determines a user's age based on the solar years of the following planets:
 * Mercury (A Mercury year is .24 Earth years)
@@ -18,8 +18,8 @@ This application does not include user interface.
 * Node Package Manager
 * Webpack
 * Jest
-#
-#
+
+
 #### Setup/Installation Requirements
 * Clone the repository to your desktop
 * Navigate to the top level of the directory
